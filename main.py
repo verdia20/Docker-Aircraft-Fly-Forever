@@ -153,7 +153,7 @@ class Coin(pygame.sprite.Sprite):
         super().__init__()
         self.coin_frames = []
         for i in range(14):
-            self.coin_frames.append(pygame.image.load('graphics/coin/coin{}.png'.format(i)).convert_alpha())
+            self.coin_frames.append(pygame.image.load('graphics/coin/Coin{}.png'.format(i)).convert_alpha())
         self.coin_frames = [pygame.transform.smoothscale(image, (69, 63)) for image in self.coin_frames]
         self.coin_frame_index = 0
 
