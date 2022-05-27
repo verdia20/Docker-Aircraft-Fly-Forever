@@ -1,5 +1,4 @@
-# Nama dan NIM anggota kelompok
-
-| Nama | NIM |
-| Ferdy. M | 120140098 |
-| Muhammad Duta Faturahman | 120140098 |
+| Command    | Description                                    |
+| ---------- | ---------------------------------------------- |
+| git status | List all new or modified files                 |
+| git diff   | Show file differences that haven't been staged |
