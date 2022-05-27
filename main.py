@@ -2,6 +2,8 @@ import pygame
 from sys import exit
 from random import randint
 
+BLUE_SKY = (186,244,252)
+
 class Player(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
@@ -244,7 +246,7 @@ def game_intro():
                 intro_music.stop()
                 run = False
                 game_active = True
-        screen.fill('#c0e8ec')
+        screen.fill(BLUE_SKY)
         screen.blit(game_name, game_name_rect)
         screen.blit(game_message, game_message_rect)
         screen.blit(player_stand, player_stand_rect)
@@ -276,7 +278,7 @@ def game_over():
                 score = 0
                 run = False
         
-        screen.fill('#c0e8ec')
+        screen.fill(BLUE_SKY)
         screen.blit(game_over_message, game_over_message_rect)
         screen.blit(score_massage, score_massage_rect)
         screen.blit(game_message, game_message_rect)
@@ -376,19 +378,19 @@ game_message_rect = game_message.get_rect(center = ((width/2), 500))
 # audio
 bg_music = pygame.mixer.Sound('audio/airship.flac')
 bg_music.set_volume(0.5)
-game_over_music = pygame.mixer.Sound('audio/sunshine.mp3')
+game_over_music = pygame.mixer.Sound('audio/sunshine.wav')
 game_over_music.set_volume(0.5)
-intro_music = pygame.mixer.Sound('audio/happy.mp3')
+intro_music = pygame.mixer.Sound('audio/happy.wav')
 intro_music.set_volume(0.5)
-coin_sound = pygame.mixer.Sound('audio/coin.mp3')
+coin_sound = pygame.mixer.Sound('audio/coin.wav')
 coin_sound.set_volume(0.5)
 shoot_sound = pygame.mixer.Sound('audio/shoot.wav')
 shoot_sound.set_volume(0.3)
-explosion_sound = pygame.mixer.Sound('audio/explosion.flac')
+explosion_sound = pygame.mixer.Sound('audio/explosion.wav')
 explosion_sound.set_volume(0.5)
-dead_sound = pygame.mixer.Sound('audio/dead.flac')
+dead_sound = pygame.mixer.Sound('audio/dead.wav')
 dead_sound.set_volume(0.5)
-item_sound = pygame.mixer.Sound('audio/item.mp3')
+item_sound = pygame.mixer.Sound('audio/item.wav')
 item_sound.set_volume(0.5)
 
 # timer
