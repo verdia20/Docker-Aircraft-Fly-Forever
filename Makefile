@@ -1,9 +1,11 @@
+# perintah untuk membuat image
 build:
 	docker build . -t aircraft/pygame
 
 xhost:
 	xhost +	
 
+# perintah untuk menjalankan di linux
 run-linux:	xhost
 	docker run --privileged -it --rm \
 	--cap-add=SYS_PTRACE \
@@ -21,6 +23,7 @@ run-linux:	xhost
 	-v ~/Downloads:/home/docker \
 	aircraft/pygame
 
+# perintah untuk menjalankan di mac
 run-mac:	xhost
 	docker run --privileged -it --rm -u 1000:1000 \
 	--cap-add=SYS_PTRACE \
@@ -30,5 +33,6 @@ run-mac:	xhost
 	-v ~/Downloads:/home/docker \
 	aircraft/pygame
 
+# perintah untuk menjalankan di windows
 run-windows:
 	docker run --privileged -it --rm --cap-add=SYS_PTRACE -u 1000:1000 -e DISPLAY=127.0.0.1:0.0 -v %userprofile%\Downloads:/home/docker aircraft/pygame
