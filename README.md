@@ -23,4 +23,4 @@ Clone repository ini, lalu copy semua file yang ada di repository ini ke direkto
 
 Buka terminal, lalu masuk ke direktori `~/Downloads` lalu jalankan perintah build seperti di bawah ini.
 
-`make build`
+    make build
