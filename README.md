@@ -67,4 +67,4 @@ Kemudian jalankan game melalu container yang sudah dibuat dengan menjalankan per
 
 ## Video Demo Kontainer
 
-[![Video Demo Kontainer]((https://img.youtube.com/vi/uqIMaMKzJaw/0.jpg)](https://youtu.be/uqIMaMKzJaw)
+[![Video Demo Kontainer](https://img.youtube.com/vi/uqIMaMKzJaw/0.jpg)](https://www.youtube.com/watch?v=uqIMaMKzJaw)
