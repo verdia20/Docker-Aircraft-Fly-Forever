@@ -19,4 +19,8 @@ Proyek ini adalah proyek pembuatan sebuah game yang menggunakan library pygame.G
 
 ## Cara Menjalankan Container
 
-Clone repository ini, lalu copy semua file yang ada di folder repository ini ke folder `~/Downloads` seperti gambar di bawah ini.
+Clone repository ini, lalu copy semua file yang ada di repository ini ke direktori `~/Downloads` seperti gambar di bawah ini.
+
+Buka terminal, lalu masuk ke direktori `~/Downloads` lalu jalankan perintah build seperti di bawah ini.
+
+`make build`
